@@ -1,5 +1,7 @@
 # FoodWagon Landing Page
 
+Design implemented from [This Template](https://www.figma.com/community/file/996012879169900959)
+
 ## Getting Started
 
 ### Installation

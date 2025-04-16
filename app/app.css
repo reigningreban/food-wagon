@@ -15,6 +15,9 @@
 
   --color-yellow-gradient-start: #ffae00;
   --color-yellow-gradient-end: #ff8a00;
+
+  --text-headline-6: 22px;
+  --text-headline-5: 35px;
 }
 
 html,

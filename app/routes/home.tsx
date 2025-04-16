@@ -1,6 +1,7 @@
 import { Header } from '~/components/Header'
 import type { Route } from './+types/home'
 import { Hero } from '~/sections/Hero'
+import { Deals } from '~/sections/Deals'
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -17,6 +18,7 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
+      <Deals />
     </main>
   )
 }
