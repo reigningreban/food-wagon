@@ -32,7 +32,7 @@ const details: DetailType[] = [
 
 export function HowItWorks({}: Props) {
   return (
-    <div className="bg-gradient-to-b from-[#FFCE69]/50 to-[#FDEDCA]/0">
+    <div className="bg-gradient-to-b from-[#FFCE69]/20 to-[#FDEDCA]/0">
       <div className="contain py-20">
         <h4 className="text-headline-4 font-bold text-tertiary mb-[72px] text-center">
           How does it work
