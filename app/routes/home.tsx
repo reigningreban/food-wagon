@@ -4,6 +4,7 @@ import { Hero } from '~/sections/Hero'
 import { Deals } from '~/sections/Deals'
 import { HowItWorks } from '~/sections/HowItWorks'
 import { PopularItems } from '~/sections/PopularItems'
+import { FeaturedRestaurants } from '~/sections/Featured'
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -18,11 +19,11 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <main>
-      <Header />
       <Hero />
       <Deals />
       <HowItWorks />
       <PopularItems />
+      <FeaturedRestaurants />
     </main>
   )
 }

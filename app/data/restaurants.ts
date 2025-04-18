@@ -11,8 +11,8 @@ export type Restaurant = {
   fastDelivery: boolean
   discount?: Discount
   featured: boolean
+  open: boolean
 }
-
 export const restaurants: Restaurant[] = [
   {
     id: 1,
@@ -26,6 +26,7 @@ export const restaurants: Restaurant[] = [
       daysLeft: 3,
     },
     featured: true,
+    open: true,
   },
   {
     id: 2,
@@ -39,6 +40,7 @@ export const restaurants: Restaurant[] = [
       daysLeft: 2,
     },
     featured: true,
+    open: false,
   },
   {
     id: 3,
@@ -48,6 +50,7 @@ export const restaurants: Restaurant[] = [
     starCount: 38,
     fastDelivery: true,
     featured: false,
+    open: true,
   },
   {
     id: 4,
@@ -61,6 +64,7 @@ export const restaurants: Restaurant[] = [
       daysLeft: 4,
     },
     featured: true,
+    open: true,
   },
   {
     id: 5,
@@ -74,6 +78,7 @@ export const restaurants: Restaurant[] = [
       daysLeft: 5,
     },
     featured: false,
+    open: false,
   },
   {
     id: 6,
@@ -83,12 +88,13 @@ export const restaurants: Restaurant[] = [
     starCount: 47,
     fastDelivery: false,
     featured: true,
+    open: true,
   },
   {
     id: 7,
     name: 'Tokyo Treats',
     description: 'Japanese & Sushi',
-    image: '/assets/images/ramen.jpg',
+    image: '/assets/images/sushi-platter.jpg',
     starCount: 68,
     fastDelivery: true,
     discount: {
@@ -96,21 +102,23 @@ export const restaurants: Restaurant[] = [
       daysLeft: 2,
     },
     featured: true,
+    open: true,
   },
   {
     id: 8,
     name: 'Spice Route',
     description: 'Thai street food',
-    image: '/assets/images/grills.jpg',
+    image: '/assets/images/street.jpg',
     starCount: 33,
     fastDelivery: false,
     featured: false,
+    open: false,
   },
   {
     id: 9,
     name: 'Urban Plate',
     description: 'Modern American bistro',
-    image: '/assets/images/street.jpg',
+    image: '/assets/images/steak.jpg',
     starCount: 55,
     fastDelivery: true,
     discount: {
@@ -118,6 +126,7 @@ export const restaurants: Restaurant[] = [
       daysLeft: 1,
     },
     featured: true,
+    open: false,
   },
   {
     id: 10,
@@ -127,6 +136,7 @@ export const restaurants: Restaurant[] = [
     starCount: 42,
     fastDelivery: false,
     featured: false,
+    open: true,
   },
   {
     id: 11,
@@ -140,30 +150,33 @@ export const restaurants: Restaurant[] = [
       daysLeft: 3,
     },
     featured: true,
+    open: true,
   },
   {
     id: 12,
     name: 'Mediterranean Breeze',
     description: 'Greek specialties',
-    image: '/assets/images/veggies2.jpg',
+    image: '/assets/images/greek.jpg',
     starCount: 49,
     fastDelivery: false,
     featured: false,
+    open: false,
   },
   {
     id: 13,
     name: 'Taco Tierra',
     description: 'Authentic Mexican',
-    image: '/assets/images/taco.jpg',
+    image: '/assets/images/tacos.jpg',
     starCount: 51,
     fastDelivery: true,
     featured: true,
+    open: true,
   },
   {
     id: 14,
     name: 'Fire & Smoke BBQ',
     description: 'Smokehouse favorites',
-    image: '/assets/images/gamon-steak.jpg',
+    image: '/assets/images/bbq-ribs.jpg',
     starCount: 63,
     fastDelivery: false,
     discount: {
@@ -171,6 +184,7 @@ export const restaurants: Restaurant[] = [
       daysLeft: 4,
     },
     featured: true,
+    open: false,
   },
   {
     id: 15,
@@ -180,12 +194,13 @@ export const restaurants: Restaurant[] = [
     starCount: 46,
     fastDelivery: true,
     featured: false,
+    open: true,
   },
   {
     id: 16,
     name: 'The Garden Table',
     description: 'Farm to table restaurant',
-    image: '/assets/images/veggies.jpg',
+    image: '/assets/images/veggies2.jpg',
     starCount: 69,
     fastDelivery: false,
     discount: {
@@ -193,6 +208,7 @@ export const restaurants: Restaurant[] = [
       daysLeft: 2,
     },
     featured: true,
+    open: true,
   },
   {
     id: 17,
@@ -202,6 +218,7 @@ export const restaurants: Restaurant[] = [
     starCount: 54,
     fastDelivery: true,
     featured: false,
+    open: false,
   },
   {
     id: 18,
@@ -215,6 +232,7 @@ export const restaurants: Restaurant[] = [
       daysLeft: 3,
     },
     featured: true,
+    open: true,
   },
   {
     id: 19,
@@ -224,14 +242,16 @@ export const restaurants: Restaurant[] = [
     starCount: 44,
     fastDelivery: true,
     featured: false,
+    open: true,
   },
   {
     id: 20,
     name: 'The Hungry Bear',
     description: 'American comfort food',
-    image: '/assets/images/steak.jpg',
+    image: '/assets/images/burger.jpg',
     starCount: 48,
     fastDelivery: false,
     featured: true,
+    open: false,
   },
 ]

@@ -39,11 +39,14 @@ export function PopularItems() {
 
   return (
     <div className="relative">
-      <div className="contain py-20 z-10">
-        <h4 className="text-headline-4 font-bold text-[#212121] mb-[72px] text-center">
+      <div className="contain z-10 pt-20">
+        <h4 className="text-headline-4 mb-[72px] text-center font-bold text-[#212121]">
           Popular items
         </h4>
-        <div className="overflow-x-scroll flex w-full gap-4" ref={scrollRef}>
+        <div
+          className="flex w-full gap-4 overflow-x-scroll pb-20"
+          ref={scrollRef}
+        >
           {popularItems.map((detail, index) => (
             <Item key={index} {...detail} />
           ))}
@@ -64,7 +67,7 @@ type ControlProps = {
 
 function Controls({ onClickForward, onClickBackward }: ControlProps) {
   return (
-    <div className="absolute top-1/2 left-0 right-0 flex justify-between mx-16">
+    <div className="absolute top-1/2 right-0 left-0 mx-16 flex justify-between">
       <ControlButton onClick={onClickBackward} icon={faChevronLeft} />
       <ControlButton onClick={onClickForward} icon={faChevronRight} />
     </div>
@@ -80,7 +83,7 @@ function ControlButton({ icon, ...params }: ControlButtonProps) {
   return (
     <Button
       {...params}
-      className="bg-[#FFB20E] stroke-1 stroke-[#FAAA01] drop-shadow-2xl drop-shadow-[#DE9700]/30 rounded-full size-12 x-y-center shadow-lg"
+      className="x-y-center size-12 rounded-full bg-[#FFB20E] stroke-[#FAAA01] stroke-1 shadow-lg drop-shadow-2xl drop-shadow-[#DE9700]/30"
     >
       <FontAwesomeIcon icon={icon} className="text-white" size="xl" />
     </Button>
@@ -90,20 +93,22 @@ function ControlButton({ icon, ...params }: ControlButtonProps) {
 function Item({ name, image, restaurantId, price }: PopularItem) {
   const restaurant = restaurants.find((r) => r.id === restaurantId)
   return (
-    <div className="items-center text-center w-72 shrink-0">
+    <div className="w-72 shrink-0 items-center text-center">
       <div
-        className="aspect-square flex flex-1 w-full bg-cover bg-no-repeat bg-center rounded-2xl mb-4"
+        className="mb-4 flex aspect-square w-full flex-1 rounded-2xl bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${image})` }}
       ></div>
-      <div className="flex flex-col text-left gap-2 mb-4">
+      <div className="mb-4 flex flex-col gap-2 text-left">
         <p className="text-headline-6 font-bold">{name}</p>
-        <div className="text-primary flex gap-2 items-center">
+        <div className="text-primary flex items-center gap-2">
           <FontAwesomeIcon icon={faLocationDot} />
           <span className="">{restaurant?.name}</span>
         </div>
         <p className="text-theme-900">{`$ ${price}`}</p>
       </div>
-      <Button className="w-full py-6 bg-tertiary">Order Now</Button>
+      <Button className="bg-tertiary w-full py-6 drop-shadow-2xl drop-shadow-[#FD725C]/20">
+        Order Now
+      </Button>
     </div>
   )
 }

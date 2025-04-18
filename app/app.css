@@ -4,26 +4,28 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans:
+    'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-source-sans: 'Source Sans 3', sans-serif;
   --color-primary: #ffb30e;
   --color-secondary: #2780ed;
   --color-tertiary: #f17228;
+  --color-success: #79b93c;
   --color-deep-orange: #ff7474;
 
   --color-yellow-gradient-start: #ffae00;
   --color-yellow-gradient-end: #ff8a00;
 
-  --text-headline-6: 22px;
+  --text-headline-6: 20px;
   --text-headline-6--line-height: 120%;
-  --text-headline-5: 35px;
-  --text-headline-4: 43px;
+  --text-headline-5: 32px;
+  --text-headline-4: 40px;
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950 font-source-sans;
+  @apply font-source-sans bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -36,7 +38,7 @@ body {
   }
 
   .yellow-gradient {
-    @apply bg-gradient-to-r from-yellow-gradient-start to-yellow-gradient-end;
+    @apply from-yellow-gradient-start to-yellow-gradient-end bg-gradient-to-r;
   }
 
   .x-y-center {
