@@ -92,7 +92,7 @@ export function Footer() {
               </div>
               <Button
                 size={'contain'}
-                className="group bg-gradient-to-br from-[#FFB800] to-[#FF8A00] px-7 font-bold hover:bg-gradient-to-bl"
+                className="group gradient-btn px-7 font-bold"
               >
                 <span className="group-hover:scale-110">Subscribe</span>
               </Button>

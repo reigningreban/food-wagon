@@ -5,7 +5,7 @@ import { Deals } from '~/sections/Deals'
 import { HowItWorks } from '~/sections/HowItWorks'
 import { PopularItems } from '~/sections/PopularItems'
 import { FeaturedRestaurants } from '~/sections/Featured'
-import CTA from '~/sections/CTA'
+import { CTA } from '~/sections/CTA'
 
 export function meta({}: Route.MetaArgs) {
   return [

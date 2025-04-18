@@ -26,10 +26,13 @@ export function FeaturedRestaurants() {
       <div className="flex justify-center">
         <Button
           size={'contain'}
-          className="drop-shadow-yellow-gradient-start/20 rounded-[14px] px-12 py-5 text-lg font-bold drop-shadow-2xl"
+          className="group drop-shadow-yellow-gradient-start/20 gradient-btn px-12 py-4 text-lg font-bold drop-shadow-2xl"
         >
           View All
-          <FontAwesomeIcon icon={faChevronRight} />
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className="transition-all duration-300 ease-in-out group-hover:translate-x-5 group-hover:scale-110"
+          />
         </Button>
       </div>
     </div>

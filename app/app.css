@@ -21,6 +21,7 @@
   --text-headline-6--line-height: 120%;
   --text-headline-5: 32px;
   --text-headline-4: 40px;
+  --text-headline-4--line-height: 112%;
 }
 
 html,
@@ -43,6 +44,10 @@ body {
 
   .x-y-center {
     @apply flex items-center justify-center;
+  }
+
+  .gradient-btn {
+    @apply bg-gradient-to-br from-[#FFB800] to-[#FF8A00] hover:bg-gradient-to-bl;
   }
 }
 

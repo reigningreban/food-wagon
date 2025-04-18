@@ -6,7 +6,7 @@ import {
   type IconDefinition,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { Button, type ButtonProps } from '~/components/ui/Button'
 import { Input } from '~/components/ui/Input'
 import { cn } from '~/lib/utils'
