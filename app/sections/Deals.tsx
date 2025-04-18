@@ -18,7 +18,6 @@ function DealItem({ image, daysLeft, discountPercent, storeName }: DealType) {
         className="h-76 flex flex-1 relative bg-cover bg-no-repeat bg-center rounded-2xl mb-8"
         style={{ backgroundImage: `url(${image})` }}
       >
-        {/* <img className="rounded-2xl w-full" src={image} /> */}
         <div className="bg-primary px-4 py-2.5 rounded-tr-4xl rounded-bl-2xl flex absolute bottom-0 left-0 text-white">
           <p className="text-[68px] font-bold leading-12">{discountPercent}</p>
           <p className="text-headline-6 flex flex-col justify-center leading-3">

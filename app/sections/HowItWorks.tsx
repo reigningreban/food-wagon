@@ -1,5 +1,3 @@
-type Props = {}
-
 type DetailType = {
   title: string
   description: string
@@ -30,7 +28,7 @@ const details: DetailType[] = [
   },
 ]
 
-export function HowItWorks({}: Props) {
+export function HowItWorks() {
   return (
     <div className="bg-gradient-to-b from-[#FFCE69]/20 to-[#FDEDCA]/0">
       <div className="contain py-20">

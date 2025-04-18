@@ -16,6 +16,7 @@
   --color-yellow-gradient-end: #ff8a00;
 
   --text-headline-6: 22px;
+  --text-headline-6--line-height: 120%;
   --text-headline-5: 35px;
   --text-headline-4: 43px;
 }
@@ -36,6 +37,10 @@ body {
 
   .yellow-gradient {
     @apply bg-gradient-to-r from-yellow-gradient-start to-yellow-gradient-end;
+  }
+
+  .x-y-center {
+    @apply flex items-center justify-center;
   }
 }
 

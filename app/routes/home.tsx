@@ -3,6 +3,7 @@ import type { Route } from './+types/home'
 import { Hero } from '~/sections/Hero'
 import { Deals } from '~/sections/Deals'
 import { HowItWorks } from '~/sections/HowItWorks'
+import { PopularItems } from '~/sections/PopularItems'
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero />
       <Deals />
       <HowItWorks />
+      <PopularItems />
     </main>
   )
 }
