@@ -99,7 +99,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex items-center justify-between pt-4">
           <div className="flex items-center gap-2">
             <p>All rights reserved.</p>
             <FontAwesomeIcon icon={faCopyright} size="2xs" />
