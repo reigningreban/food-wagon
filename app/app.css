@@ -47,7 +47,7 @@ body {
   }
 
   .gradient-btn {
-    @apply bg-gradient-to-br from-[#FFB800] to-[#FF8A00] hover:bg-gradient-to-bl;
+    @apply bg-gradient-to-br from-[#FFB800] to-[#FF8A00];
   }
 }
 

@@ -1,6 +1,7 @@
 import {
   faChevronLeft,
   faChevronRight,
+  faDollarSign,
   faLocationDot,
   type IconDefinition,
 } from '@fortawesome/free-solid-svg-icons'
@@ -104,7 +105,10 @@ function Item({ name, image, restaurantId, price }: PopularItem) {
           <FontAwesomeIcon icon={faLocationDot} />
           <span className="">{restaurant?.name}</span>
         </div>
-        <p className="text-theme-900">{`$ ${price}`}</p>
+        <div className="flex items-center text-gray-900">
+          <FontAwesomeIcon icon={faDollarSign} size="xs" />
+          <span>{price.toFixed(2)}</span>
+        </div>
       </div>
       <Button className="bg-tertiary w-full py-6 drop-shadow-2xl drop-shadow-[#FD725C]/20">
         Order Now

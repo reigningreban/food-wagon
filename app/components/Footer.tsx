@@ -94,7 +94,9 @@ export function Footer() {
                 size={'contain'}
                 className="group gradient-btn px-7 font-bold"
               >
-                <span className="group-hover:scale-110">Subscribe</span>
+                <span className="transition-all duration-300 ease-in-out group-hover:scale-110">
+                  Subscribe
+                </span>
               </Button>
             </div>
           </div>

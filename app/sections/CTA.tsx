@@ -38,6 +38,26 @@ export function CTA() {
           <CTACard {...item} index={index} key={index} />
         ))}
       </div>
+      <div
+        className="x-y-center h-[400px] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/assets/images/cta-bg.jpg')" }}
+      >
+        <div className="text-center">
+          <h2 className="mb-12 text-[57px] leading-[97.5%] font-black text-white">
+            Are you ready to order with <br /> the best deals?
+          </h2>
+          <Button
+            variant={'plain'}
+            className="group bg-tertiary hover:border-tertiary hover:bg-tertiary/90 border-3 border-transparent px-4 py-6 font-bold text-white transition-colors duration-300 ease-in-out"
+          >
+            <span>PROCEED TO ORDER</span>
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              className="transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:scale-120"
+            />
+          </Button>
+        </div>
+      </div>
     </div>
   )
 }
