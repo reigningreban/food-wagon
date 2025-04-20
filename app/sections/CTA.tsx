@@ -85,7 +85,7 @@ function CTACard({
           {start} <span className="text-primary">{` ${end}`}</span>
         </h4>
         <p className="mb-28 text-[#616161]/70">{description}</p>
-        <Button className="group gradient-btn w-full py-6 font-bold text-white">
+        <Button className="group gradient-bg w-full py-6 font-bold text-white">
           <span>PROCEED TO ORDER</span>
           <FontAwesomeIcon
             icon={faChevronRight}

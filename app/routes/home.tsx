@@ -6,6 +6,8 @@ import { HowItWorks } from '~/sections/HowItWorks'
 import { PopularItems } from '~/sections/PopularItems'
 import { FeaturedRestaurants } from '~/sections/Featured'
 import { CTA } from '~/sections/CTA'
+import { SearchByFood } from '~/sections/SearchByFood'
+import Install from '~/sections/Install'
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -25,6 +27,8 @@ export default function Home() {
       <HowItWorks />
       <PopularItems />
       <FeaturedRestaurants />
+      <SearchByFood />
+      <Install />
       <CTA />
     </main>
   )

@@ -20,6 +20,7 @@
   --text-headline-6: 20px;
   --text-headline-6--line-height: 120%;
   --text-headline-5: 32px;
+  --text-headline-5--line-height: 120%;
   --text-headline-4: 40px;
   --text-headline-4--line-height: 112%;
 }
@@ -46,8 +47,18 @@ body {
     @apply flex items-center justify-center;
   }
 
-  .gradient-btn {
+  .gradient-bg {
     @apply bg-gradient-to-br from-[#FFB800] to-[#FF8A00];
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 

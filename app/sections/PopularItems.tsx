@@ -10,33 +10,10 @@ import { useRef } from 'react'
 import { Button } from '~/components/ui/Button'
 import { popularItems, type PopularItem } from '~/data/popular'
 import { restaurants } from '~/data/restaurants'
+import { handleScroll } from '~/lib/componentUtils'
 
 export function PopularItems() {
   const scrollRef = useRef<HTMLDivElement>(null)
-
-  const scrollTo = (offset: number) => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: offset,
-        behavior: 'smooth',
-      })
-    }
-  }
-
-  const handleScroll = (direction: 'left' | 'right') => {
-    if (scrollRef.current) {
-      const scrollWidth = scrollRef.current.scrollWidth
-      const clientWidth = scrollRef.current.clientWidth
-      const scrollLeft = scrollRef.current.scrollLeft
-      const scrollOffset = direction === 'left' ? -clientWidth : clientWidth
-      if (
-        (direction === 'left' && scrollLeft > 0) ||
-        (direction === 'right' && scrollLeft < scrollWidth - clientWidth)
-      ) {
-        scrollTo(scrollOffset)
-      }
-    }
-  }
 
   return (
     <div className="relative">
@@ -45,7 +22,7 @@ export function PopularItems() {
           Popular items
         </h4>
         <div
-          className="flex w-full gap-4 overflow-x-scroll pb-20"
+          className="no-scrollbar flex w-full gap-4 overflow-x-scroll pb-20"
           ref={scrollRef}
         >
           {popularItems.map((detail, index) => (
@@ -54,8 +31,8 @@ export function PopularItems() {
         </div>
       </div>
       <Controls
-        onClickForward={() => handleScroll('right')}
-        onClickBackward={() => handleScroll('left')}
+        onClickForward={() => handleScroll(scrollRef, 'right')}
+        onClickBackward={() => handleScroll(scrollRef, 'left')}
       />
     </div>
   )

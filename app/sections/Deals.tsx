@@ -26,9 +26,9 @@ function DealItem({ image, daysLeft, discountPercent, storeName }: DealType) {
           </p>
         </div>
       </div>
-      <div className="text-headline-6">
-        <p className="mb-3.5 font-bold text-[#424242]">{storeName}</p>
-        <div className="bg-tertiary/20 text-tertiary t inline-block rounded-lg px-4 py-2">{`${daysLeft} ${daysLeftText} Remaining`}</div>
+      <div className="text-lg font-bold">
+        <p className="mb-3.5 text-[#424242]">{storeName}</p>
+        <div className="bg-tertiary/20 text-tertiary inline-block rounded-lg px-3 py-1">{`${daysLeft} ${daysLeftText} Remaining`}</div>
       </div>
     </div>
   )
