@@ -86,6 +86,7 @@ export function Footer() {
                 <FontAwesomeIcon icon={faEnvelope} />
                 <Input
                   type="email"
+                  name="email"
                   className="w-72 border-0 px-4 py-2 text-gray-100 placeholder:text-gray-400 focus:outline-none"
                   placeholder="Enter your email"
                 />
@@ -109,11 +110,18 @@ export function Footer() {
           </div>
           <div>
             Designed by{' '}
-            <a href="" target="_blank" className="font-bold">
+            <a
+              href="https://www.figma.com/@themewagon"
+              target="_blank"
+              className="font-bold"
+            >
               ThemeWagon
             </a>
             , Implemented by{' '}
-            <a href="www.linkedin.com/in/francis-oke" className="font-bold">
+            <a
+              href="http://www.linkedin.com/in/francis-oke"
+              className="font-bold"
+            >
               Francis Oke
             </a>
           </div>

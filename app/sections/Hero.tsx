@@ -41,6 +41,7 @@ export function Hero() {
                     className="text-deep-orange"
                   />
                   <Input
+                    name="address"
                     className="border-0 font-sans text-lg placeholder:text-lg placeholder:text-gray-500 active:outline-none"
                     placeholder="Enter Your Address"
                   />
