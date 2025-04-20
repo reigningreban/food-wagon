@@ -4,14 +4,14 @@ type FoodType = {
 }
 
 export const foodTypes: FoodType[] = [
-  { title: 'Pizza', image: '/assets/images/pizza.jpg' },
-  { title: 'Burger', image: '/assets/images/burger.jpg' },
-  { title: 'Noodles', image: '/assets/images/noodles.jpg' },
-  { title: 'Pasta', image: '/assets/images/pasta.jpg' },
-  { title: 'Ramen', image: '/assets/images/ramen.jpg' },
-  { title: 'Bibimbap', image: '/assets/images/bibimbap.jpg' },
-  { title: 'Sandwich', image: '/assets/images/sandwich.jpg' },
-  { title: 'Chicken', image: '/assets/images/chicken.jpg' },
-  { title: 'Steak', image: '/assets/images/steak.jpg' },
-  { title: 'Salad', image: '/assets/images/caesar-salad.jpg' },
+  { title: 'Pizza', image: '/images/pizza.jpg' },
+  { title: 'Burger', image: '/images/burger.jpg' },
+  { title: 'Noodles', image: '/images/noodles.jpg' },
+  { title: 'Pasta', image: '/images/pasta.jpg' },
+  { title: 'Ramen', image: '/images/ramen.jpg' },
+  { title: 'Bibimbap', image: '/images/bibimbap.jpg' },
+  { title: 'Sandwich', image: '/images/sandwich.jpg' },
+  { title: 'Chicken', image: '/images/chicken.jpg' },
+  { title: 'Steak', image: '/images/steak.jpg' },
+  { title: 'Salad', image: '/images/caesar-salad.jpg' },
 ]

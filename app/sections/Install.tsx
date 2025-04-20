@@ -9,21 +9,21 @@ export default function Install() {
       <div className="relative z-[4] flex flex-col items-stretch pt-32">
         <div className="flex items-center gap-13 rounded-4xl bg-white p-13">
           <div className="flex items-center gap-7">
-            <img src="/assets/icons/Discount.svg" />
+            <img src="/icons/Discount.svg" />
             <div className="gradient-bg text-headline-5 bg-clip-text font-bold text-transparent">
               Daily <br /> Discounts
             </div>
           </div>
           <hr className="h-24 border-r-2 border-[#CFCFCF]" />
           <div className="flex items-center gap-7">
-            <img src="/assets/icons/LiveTracking.svg" />
+            <img src="/icons/LiveTracking.svg" />
             <div className="gradient-bg text-headline-5 bg-clip-text font-bold text-transparent">
               Live <br /> Tracking
             </div>
           </div>
           <hr className="h-24 border-r-2 border-[#CFCFCF]" />
           <div className="flex items-center gap-7">
-            <img src="/assets/icons/QuickDelivery.svg" />
+            <img src="/icons/QuickDelivery.svg" />
             <div className="gradient-bg text-headline-5 bg-clip-text font-bold text-transparent">
               Quick <br /> Delivery
             </div>
@@ -32,11 +32,11 @@ export default function Install() {
         <div className="relative flex h-[700px] grow items-center justify-end">
           <div className="absolute bottom-0 left-0 flex">
             <img
-              src="/assets/images/screens/Screen1.png"
+              src="/images/screens/Screen1.png"
               className="relative -bottom-24 w-80"
             />
             <img
-              src="/assets/images/screens/Screen2.png"
+              src="/images/screens/Screen2.png"
               className="relative z-10 -ml-10 w-80"
             />
           </div>

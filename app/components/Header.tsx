@@ -4,14 +4,13 @@ import {
   faUser,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import LogoImage from '~/../assets/logo.svg'
 import { Button } from '~/components/ui/Button'
 
 export function Header() {
   return (
     <div className="bg-white text-gray-800">
-      <div className="contain py-5 flex flex-row justify-between items-center">
-        <img src={LogoImage} />
+      <div className="contain flex flex-row items-center justify-between py-5">
+        <img src="/logo.svg" />
         <div className="flex items-center gap-3">
           <b>Deliver to:</b>
           <div className="flex items-center">
@@ -23,7 +22,7 @@ export function Header() {
             <div className="font-bold">Mohammadpur Bus Stand, Dhaka</div>
           </div>
         </div>
-        <div className="flex gap-7 items-center">
+        <div className="flex items-center gap-7">
           <Button variant={'plain'}>
             <FontAwesomeIcon
               icon={faMagnifyingGlass}
@@ -34,10 +33,10 @@ export function Header() {
           <Button
             variant="plain"
             size="contain"
-            className="shadow-lg hover:shadow-xl active:shadow-2xs bg-white shadow-yellow-gradient-start/50 inset-shadow-sm inset-shadow-primary/20 px-6 py-3"
+            className="shadow-yellow-gradient-start/50 inset-shadow-primary/20 bg-white px-6 py-3 shadow-lg inset-shadow-sm hover:shadow-xl active:shadow-2xs"
           >
             <FontAwesomeIcon icon={faUser} className="text-primary" />
-            <span className="font-bold yellow-gradient bg-clip-text text-transparent">
+            <span className="yellow-gradient bg-clip-text font-bold text-transparent">
               Login
             </span>
           </Button>

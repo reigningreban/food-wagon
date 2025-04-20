@@ -14,19 +14,19 @@ const data: CTAData[] = [
     title: ['Best deals', 'Crispy Sandwiches'],
     description:
       ' Enjoy the large size of sandwiches. Complete perfect slice of sandwiches.',
-    image: '/assets/images/sandwich.jpg',
+    image: '/images/sandwich.jpg',
   },
   {
     title: ['Celebrate  parties with', 'Fried Chicken'],
     description:
       'Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out best deals for fried chicken.',
-    image: '/assets/images/chicken.jpg',
+    image: '/images/chicken.jpg',
   },
   {
     title: ['Wanna eat hot & spicy', 'Pizza?'],
     description:
       'Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best deals.',
-    image: '/assets/images/pizza.jpg',
+    image: '/images/pizza.jpg',
   },
 ]
 
@@ -40,7 +40,7 @@ export function CTA() {
       </div>
       <div
         className="x-y-center h-[400px] bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/assets/images/cta-bg.jpg')" }}
+        style={{ backgroundImage: "url('/images/cta-bg.jpg')" }}
       >
         <div className="text-center">
           <h2 className="mb-12 text-[57px] leading-[97.5%] font-black text-white">
