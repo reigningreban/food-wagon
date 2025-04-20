@@ -8,6 +8,7 @@ import { FeaturedRestaurants } from '~/sections/Featured'
 import { CTA } from '~/sections/CTA'
 import { SearchByFood } from '~/sections/SearchByFood'
 import Install from '~/sections/Install'
+import { Footer } from '~/components/Footer'
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -22,6 +23,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <main>
+      <Header />
       <Hero />
       <Deals />
       <HowItWorks />
@@ -30,6 +32,7 @@ export default function Home() {
       <SearchByFood />
       <Install />
       <CTA />
+      <Footer />
     </main>
   )
 }
