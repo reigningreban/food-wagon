@@ -49,7 +49,7 @@ export default function Install() {
               discounts and you'll be lost in a world of delectable food.
             </p>
             <div className="flex justify-stretch gap-2">
-              <button className="group flex items-center gap-2 rounded-md bg-white px-3 py-2 drop-shadow-2xl drop-shadow-[#FFAE00]/30 hover:drop-shadow-xl hover:drop-shadow-[#FFAE00]/20">
+              <button className="group flex cursor-pointer items-center gap-2 rounded-md bg-white px-3 py-2 drop-shadow-2xl drop-shadow-[#FFAE00]/30 hover:drop-shadow-xl hover:drop-shadow-[#FFAE00]/20">
                 <FontAwesomeIcon
                   icon={faGooglePlay}
                   className="text-tertiary group-hover:scale-105"
@@ -64,7 +64,7 @@ export default function Install() {
                   </span>
                 </span>
               </button>
-              <button className="group flex items-center gap-2 rounded-md bg-white px-3 py-2 drop-shadow-2xl drop-shadow-[#FFAE00]/30 hover:drop-shadow-xl hover:drop-shadow-[#FFAE00]/20">
+              <button className="group flex cursor-pointer items-center gap-2 rounded-md bg-white px-3 py-2 drop-shadow-2xl drop-shadow-[#FFAE00]/30 hover:drop-shadow-xl hover:drop-shadow-[#FFAE00]/20">
                 <FontAwesomeIcon
                   icon={faApple}
                   className="text-tertiary group-hover:scale-105"

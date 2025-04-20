@@ -7,6 +7,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button } from '~/components/ui/Button'
 import { restaurants, type Restaurant } from '~/data/restaurants'
+import { generateLogoBg } from '~/lib/componentUtils'
 
 const featuredRestaurants = restaurants
   .filter((restaurant) => restaurant.featured)
@@ -20,7 +21,7 @@ export function FeaturedRestaurants() {
       </h4>
       <div className="my-22 grid grid-cols-4 gap-x-4 gap-y-16">
         {featuredRestaurants.map((restaurant, index) => (
-          <Restaurant key={index} {...restaurant} />
+          <Restaurant key={index} {...restaurant} index={index} />
         ))}
       </div>
       <div className="flex justify-center">
@@ -46,7 +47,10 @@ function Restaurant({
   open,
   name,
   starCount,
-}: Restaurant) {
+  index,
+}: Restaurant & { index: number }) {
+  const logoBg = generateLogoBg(index)
+
   return (
     <div>
       <div
@@ -67,7 +71,12 @@ function Restaurant({
         )}
       </div>
       <div className="mb-4 flex items-center gap-6">
-        <div className="size-16 rounded-lg bg-red-500"></div>
+        <div
+          className="x-y-center size-16 rounded-lg p-2 text-[.7rem] text-white"
+          style={{ backgroundColor: logoBg }}
+        >
+          <span className="text-center">{name}</span>
+        </div>
         <div className="mb-1 flex flex-col">
           <p className="headline-6 font-bold text-gray-800">{name}</p>
           <div className="text-primary flex items-center gap-2 text-lg">

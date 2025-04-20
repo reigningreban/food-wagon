@@ -17,10 +17,10 @@ export function SearchByFood() {
         <div className="flex justify-between">
           <h4 className="text-headline-4 font-bold">Search by food</h4>
           <div className="mb-22 flex gap-6">
-            <p className="text-primary flex items-center gap-2">
+            <a className="text-primary flex items-center gap-2" href="#">
               <span>View all</span>
               <FontAwesomeIcon icon={faChevronRight} size="xs" />
-            </p>
+            </a>
             <div className="flex gap-4">
               <Button
                 className="x-y-center bg-primary size-13 rounded-full text-white"
@@ -42,13 +42,17 @@ export function SearchByFood() {
           ref={scrollRef}
         >
           {foodTypes.map(({ image, title }, index) => (
-            <div key={index} className="flex flex-col items-center gap-6">
+            <a
+              href="#"
+              key={index}
+              className="flex flex-col items-center gap-6"
+            >
               <div
                 className="size-52 rounded-full bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${image})` }}
               ></div>
               <p className="text-headline-6 font-bold">{title}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>

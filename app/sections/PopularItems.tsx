@@ -87,7 +87,7 @@ function Item({ name, image, restaurantId, price }: PopularItem) {
           <span>{price.toFixed(2)}</span>
         </div>
       </div>
-      <Button className="bg-tertiary w-full py-6 drop-shadow-2xl drop-shadow-[#FD725C]/20">
+      <Button className="bg-tertiary hover:bg-tertiary/90 w-full py-6 drop-shadow-2xl drop-shadow-[#FD725C]/20">
         Order Now
       </Button>
     </div>
