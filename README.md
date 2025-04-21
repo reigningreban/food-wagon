@@ -34,11 +34,8 @@ npm run build
 
 The build files will be located in the `build/client` directory.
 
-## Current Limitations
-
-- The SPA is not yet mobile responsive.
-
 ## Future Improvements
 
 - Implement mobile responsiveness to enhance usability on smaller devices.
+- Include API integration
 - Add unit and integration tests to improve code reliability.
