@@ -15,11 +15,11 @@ const featuredRestaurants = restaurants
 
 export function FeaturedRestaurants() {
   return (
-    <div className="contain pb-20">
+    <div className="contain pb-12 lg:pb-20">
       <h4 className="text-headline-4 text-center font-bold text-[#212121]">
         Featured Restaurants
       </h4>
-      <div className="my-22 grid grid-cols-4 gap-x-4 gap-y-16">
+      <div className="my-12 grid grid-cols-1 gap-x-4 gap-y-16 sm:grid-cols-2 lg:my-22 lg:grid-cols-4">
         {featuredRestaurants.map((restaurant, index) => (
           <Restaurant key={index} {...restaurant} index={index} />
         ))}

@@ -16,7 +16,7 @@ export function Header() {
   return (
     <div
       className={cn(
-        'fixed top-0 w-screen bg-white text-gray-800',
+        'fixed top-0 z-50 w-screen border-b-1 bg-white text-gray-800',
         expanded && 'rounded-b-lg'
       )}
     >
@@ -30,7 +30,7 @@ export function Header() {
           <img src="/logo.svg" className="" />
           <MenuButton isExpanded={expanded} toggleExpanded={toggleExpanded} />
         </div>
-        <div className="flex flex-wrap items-center gap-3 text-xs lg:text-base">
+        <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm md:text-base">
           <b>Deliver to:</b>
           <div className="flex items-center">
             <FontAwesomeIcon

@@ -14,14 +14,19 @@ export function SearchByFood() {
   return (
     <div className="bg-[#FEFAF1]">
       <div className="contain py-12">
-        <div className="flex justify-between">
-          <h4 className="text-headline-4 font-bold">Search by food</h4>
-          <div className="mb-22 flex gap-6">
-            <a className="text-primary flex items-center gap-2" href="#">
+        <div className="flex flex-col justify-between gap-y-5 md:flex-row">
+          <h4 className="text-headline-4 grow text-center font-bold md:text-left">
+            Search by food
+          </h4>
+          <div className="mb-12 flex gap-6 md:mb-22">
+            <a
+              className="text-primary ml-auto flex items-center gap-2 md:ml-0"
+              href="#"
+            >
               <span>View all</span>
               <FontAwesomeIcon icon={faChevronRight} size="xs" />
             </a>
-            <div className="flex gap-4">
+            <div className="hidden gap-4 md:flex">
               <Button
                 className="x-y-center bg-primary size-13 rounded-full text-white"
                 onClick={() => handleScroll(scrollRef, 'left')}

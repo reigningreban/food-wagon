@@ -2,7 +2,7 @@ import { deals, type DealType } from '~/data/deals'
 
 export function Deals() {
   return (
-    <div className="contain grid grid-cols-4 gap-4 py-20">
+    <div className="contain grid grid-cols-1 gap-4 gap-y-12 py-12 sm:grid-cols-2 lg:grid-cols-4 lg:py-20">
       {deals.map((deal, idx) => (
         <DealItem {...deal} key={idx} />
       ))}

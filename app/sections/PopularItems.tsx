@@ -17,12 +17,12 @@ export function PopularItems() {
 
   return (
     <div className="relative">
-      <div className="contain z-10 pt-20">
-        <h4 className="text-headline-4 mb-[72px] text-center font-bold text-[#212121]">
+      <div className="contain z-10 pt-12 lg:pt-20">
+        <h4 className="text-headline-4 mb-12 text-center font-bold text-[#212121] lg:mb-[72px]">
           Popular items
         </h4>
         <div
-          className="no-scrollbar flex w-full gap-4 overflow-x-scroll pb-20"
+          className="no-scrollbar flex w-full gap-4 overflow-x-scroll pb-12 lg:pb-20"
           ref={scrollRef}
         >
           {popularItems.map((detail, index) => (
@@ -45,7 +45,7 @@ type ControlProps = {
 
 function Controls({ onClickForward, onClickBackward }: ControlProps) {
   return (
-    <div className="absolute top-1/2 right-0 left-0 mx-16 flex justify-between">
+    <div className="absolute top-1/2 right-0 left-0 mx-16 hidden justify-between lg:flex">
       <ControlButton onClick={onClickBackward} icon={faChevronLeft} />
       <ControlButton onClick={onClickForward} icon={faChevronRight} />
     </div>
@@ -71,7 +71,7 @@ function ControlButton({ icon, ...params }: ControlButtonProps) {
 function Item({ name, image, restaurantId, price }: PopularItem) {
   const restaurant = restaurants.find((r) => r.id === restaurantId)
   return (
-    <div className="w-72 shrink-0 items-center text-center">
+    <div className="w-56 shrink-0 items-center text-center lg:w-72">
       <div
         className="mb-4 flex aspect-square w-full flex-1 rounded-2xl bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${image})` }}

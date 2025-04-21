@@ -47,20 +47,25 @@ const links: FooterLinkGroup[] = [
 export function Footer() {
   return (
     <div className="bg-[#212121] text-gray-100">
-      <div className="contain py-20">
+      <div className="contain py-8 lg:py-20">
         <div className="border-b border-[#424242]">
-          <h6 className="text-headline-6 mb-10 font-bold"> Our top cities</h6>
-          <div className="grid grid-cols-5 gap-2 pb-24 font-light">
+          <h6 className="text-headline-6 mb-5 font-bold lg:mb-10">
+            {' '}
+            Our top cities
+          </h6>
+          <div className="grid grid-cols-2 gap-2 pb-8 font-light sm:grid-cols-3 lg:grid-cols-5 lg:pb-24">
             {cities.map((city, index) => (
               <span key={index}>{city}</span>
             ))}
           </div>
         </div>
-        <div className="flex justify-between border-b border-[#424242] py-16">
-          <div className="flex flex-1 gap-28">
+        <div className="flex flex-col justify-between gap-y-8 border-b border-[#424242] py-8 md:flex-row md:py-16">
+          <div className="flex flex-1 flex-wrap gap-8 lg:gap-28">
             {links.map(({ title, links }, index) => (
               <div key={index}>
-                <h6 className="text-headline-6 mb-10 font-bold">{title}</h6>
+                <h6 className="text-headline-6 mb-5 font-bold lg:mb-10">
+                  {title}
+                </h6>
                 <ul className="list-none font-light">
                   {links.map(({ text, href }, index) => (
                     <li key={index} className="not-last:mb-2">
@@ -71,7 +76,7 @@ export function Footer() {
               </div>
             ))}
           </div>
-          <div className="flex flex-col gap-10 text-[#f5f5f5]">
+          <div className="flex flex-col gap-5 text-[#f5f5f5] lg:gap-10">
             <h6 className="font-bold">FOLLOW US</h6>
             <div className="flex gap-4">
               <FontAwesomeIcon icon={faInstagram} />
@@ -81,19 +86,19 @@ export function Footer() {
             <p className="font-bold">
               Receive exclusive offers in your mailbox
             </p>
-            <div className="flex items-stretch gap-4">
+            <div className="flex flex-col items-stretch gap-4 lg:flex-row">
               <div className="flex items-center rounded-md bg-[#424242] px-4 py-2.5 text-[#adadad]">
                 <FontAwesomeIcon icon={faEnvelope} />
                 <Input
                   type="email"
                   name="email"
-                  className="w-72 border-0 px-4 py-2 text-gray-100 placeholder:text-gray-400 focus:outline-none"
+                  className="max-w-72 border-0 px-4 py-2 text-gray-100 placeholder:text-gray-400 focus:outline-none"
                   placeholder="Enter your email"
                 />
               </div>
               <Button
                 size={'contain'}
-                className="group gradient-bg px-7 font-bold"
+                className="group gradient-bg px-7 py-3.5 font-bold"
               >
                 <span className="transition-all duration-300 ease-in-out group-hover:scale-110">
                   Subscribe
@@ -102,13 +107,13 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between pt-4">
+        <div className="flex flex-col items-start justify-between pt-4 text-nowrap lg:flex-row lg:items-center">
           <div className="flex items-center gap-2">
             <p>All rights reserved.</p>
             <FontAwesomeIcon icon={faCopyright} size="2xs" />
             <b>Francis Oke, 2025</b>
           </div>
-          <div>
+          <div className="text-wrap">
             Designed by{' '}
             <a
               href="https://www.figma.com/@themewagon"

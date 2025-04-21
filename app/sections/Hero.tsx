@@ -19,10 +19,10 @@ export function Hero() {
 
   return (
     <div className="mt-[78px] flex h-[620px] flex-1 bg-[url('/images/hero-bg.png')] bg-cover bg-right-bottom">
-      <div className="contain flex items-stretch justify-between">
-        <div className="flex items-center">
-          <div>
-            <h1 className="mb-4 text-8xl font-bold text-white">
+      <div className="contain flex justify-center gap-2 lg:justify-between">
+        <div className="flex w-full items-center">
+          <div className="">
+            <h1 className="mb-4 text-4xl font-bold text-white sm:text-7xl lg:text-8xl">
               Are you starving?
             </h1>
             <p className="mb-8 text-2xl text-[#504F4F]">
@@ -33,8 +33,8 @@ export function Hero() {
                 deliveryOption={deliveryOption}
                 setDeliveryOption={setDeliveryOption}
               />
-              <div className="flex gap-4 p-6">
-                <div className="flex flex-grow items-center gap-1 rounded-xl bg-gray-100 px-4 py-2">
+              <div className="flex flex-col gap-4 p-3 lg:flex-row">
+                <div className="flex flex-grow items-center gap-1 rounded-xl bg-gray-100 px-4 py-3">
                   <FontAwesomeIcon
                     icon={faLocationDot}
                     size="lg"
@@ -57,7 +57,7 @@ export function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex w-[505px] flex-col justify-end">
+        <div className="hidden w-[505px] flex-col justify-end lg:flex">
           <img src="/images/hero-bowl.png" className="w-full" />
         </div>
       </div>
@@ -76,7 +76,7 @@ function OptionButton({ active, icon, label, onClick }: OptionButtonProps) {
     <Button
       variant={'plain'}
       className={cn(
-        'flex h-12 w-36 cursor-pointer items-center gap-2.5 rounded-xl px-6 py-2.5 text-gray-600 transition-colors duration-300 ease-in-out',
+        'flex h-12 w-32 cursor-pointer items-center gap-2.5 rounded-xl px-6 py-2.5 text-gray-600 transition-colors duration-300 ease-in-out',
         active && 'text-tertiary'
       )}
       onClick={onClick}
@@ -97,10 +97,10 @@ function DeliveryOptions({
   setDeliveryOption,
 }: DeliveryOptionsProps) {
   return (
-    <div className="relative flex gap-2 border-b p-6">
+    <div className="relative flex gap-2 border-b p-3 sm:p-6">
       <div
         className={cn(
-          'bg-tertiary/30 absolute h-12 w-36 rounded-xl transition-transform duration-300 ease-in-out',
+          'bg-tertiary/30 absolute h-12 w-32 rounded-xl transition-transform duration-300 ease-in-out',
           deliveryOption === 'pickup' &&
             'translate-x-[calc(100%+(var(--spacing)*2))]'
         )}

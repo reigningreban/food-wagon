@@ -35,9 +35,6 @@ export default function Home() {
         <CTA />
         <Footer />
       </div>
-      {/* <div className="x-y-center text-tertiary h-screen text-2xl font-black lg:hidden">
-        Please open on a larger screen
-      </div> */}
     </main>
   )
 }

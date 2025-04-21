@@ -33,7 +33,7 @@ const data: CTAData[] = [
 export function CTA() {
   return (
     <div>
-      <div className="contain flex flex-col gap-20 py-40">
+      <div className="contain flex flex-col gap-20 py-12 lg:py-40">
         {data.map((item, index) => (
           <CTACard {...item} index={index} key={index} />
         ))}
@@ -43,7 +43,7 @@ export function CTA() {
         style={{ backgroundImage: "url('/images/cta-bg.jpg')" }}
       >
         <div className="text-center">
-          <h2 className="mb-12 text-[57px] leading-[97.5%] font-black text-white">
+          <h2 className="mb-12 text-4xl leading-[97.5%] font-black text-white lg:text-[57px]">
             Are you ready to order with <br /> the best deals?
           </h2>
           <Button
@@ -72,19 +72,23 @@ function CTACard({
   image,
   index,
 }: CTACardProps) {
-  const isOdd = index % 2 !== 0
+  const isEven = index % 2 === 0
   return (
     <div
       className={cn(
-        'inset-shadow flex overflow-hidden rounded-xl shadow-2xl',
-        isOdd ? 'flex-row-reverse' : 'flex-row'
+        'inset-shadow flex flex-col overflow-hidden rounded-xl shadow-2xl',
+        isEven ? 'md:flex-row-reverse' : 'md:flex-row'
       )}
     >
-      <div className="w-[500px] px-14 pt-40 pb-14">
-        <h4 className="text-headline-4 mb-5 font-bold text-[#353535]">
+      <div
+        className="h-60 grow bg-cover bg-center bg-no-repeat md:h-auto"
+        style={{ backgroundImage: `url(${image})` }}
+      ></div>
+      <div className="max-w-[500px] px-8 pt-8 pb-10 lg:px-14 lg:pt-40 lg:pb-14">
+        <h4 className="lg:text-headline-4 mb-5 text-4xl font-bold text-[#353535]">
           {start} <span className="text-primary">{` ${end}`}</span>
         </h4>
-        <p className="mb-28 text-[#616161]/70">{description}</p>
+        <p className="mb-12 text-[#616161]/70 lg:mb-28">{description}</p>
         <Button className="group gradient-bg w-full py-6 font-bold text-white">
           <span>PROCEED TO ORDER</span>
           <FontAwesomeIcon
@@ -93,10 +97,6 @@ function CTACard({
           />
         </Button>
       </div>
-      <div
-        className="grow bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${image})` }}
-      ></div>
     </div>
   )
 }

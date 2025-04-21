@@ -31,11 +31,11 @@ const details: DetailType[] = [
 export function HowItWorks() {
   return (
     <div className="bg-gradient-to-b from-[#FFCE69]/20 to-[#FDEDCA]/0">
-      <div className="contain py-20">
+      <div className="contain py-12 lg:py-20">
         <h4 className="text-headline-4 text-tertiary mb-[72px] text-center font-bold">
           How does it work
         </h4>
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {details.map((detail, index) => (
             <Detail key={index} {...detail} />
           ))}
