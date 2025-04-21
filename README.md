@@ -2,7 +2,7 @@
 
 This project is an implementation of the design file from [This Template](https://www.figma.com/community/file/996012879169900959). It is built as a React.js Single Page Application (SPA) using the [React Router](https://reactrouter.com/) framework for navigation. The application is styled with [TailwindCSS](https://tailwindcss.com/) and incorporates some UI components from the [ShadCN](https://shadcn.dev/) library.
 
-A live version of this repository can be found [here](https://francis-food-wagon.netlify.app/) (Not optimized for mobile)
+A live version of this repository can be found [here](https://francis-food-wagon.netlify.app/)
 
 ## Getting Started
 
