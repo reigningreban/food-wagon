@@ -23,16 +23,21 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <main>
-      <Header />
-      <Hero />
-      <Deals />
-      <HowItWorks />
-      <PopularItems />
-      <FeaturedRestaurants />
-      <SearchByFood />
-      <Install />
-      <CTA />
-      <Footer />
+      <div className="lg:block">
+        <Header />
+        <Hero />
+        <Deals />
+        <HowItWorks />
+        <PopularItems />
+        <FeaturedRestaurants />
+        <SearchByFood />
+        <Install />
+        <CTA />
+        <Footer />
+      </div>
+      {/* <div className="x-y-center text-tertiary h-screen text-2xl font-black lg:hidden">
+        Please open on a larger screen
+      </div> */}
     </main>
   )
 }

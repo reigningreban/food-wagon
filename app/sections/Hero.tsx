@@ -18,7 +18,7 @@ export function Hero() {
     useState<DeliveryOption>('delivery')
 
   return (
-    <div className="flex h-[620px] flex-1 bg-[url('/images/hero-bg.png')] bg-cover bg-right-bottom">
+    <div className="mt-[78px] flex h-[620px] flex-1 bg-[url('/images/hero-bg.png')] bg-cover bg-right-bottom">
       <div className="contain flex items-stretch justify-between">
         <div className="flex items-center">
           <div>

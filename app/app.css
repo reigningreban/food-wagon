@@ -36,7 +36,7 @@ body {
 
 @layer components {
   .contain {
-    @apply container mx-auto;
+    @apply container mx-auto px-2;
   }
 
   .yellow-gradient {
